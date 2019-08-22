@@ -1,0 +1,43 @@
+{
+  "name": "metalsmith-sanity",
+  "version": "0.1.0",
+  "description": "Metalsmith plugin for pulling and working with data from sanity.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hcavalieri/metalsmith-sanity.git"
+  },
+  "keywords": [
+    "metalsmith",
+    "sanity",
+    "cms",
+    "metalsmith-plugin"
+  ],
+  "author": {
+    "name": "Henrique Cavalieri",
+    "email": "henrique@kaordica.design",
+    "url": "https://kaordica.design"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hcavalieri/metalsmith-sanity/issues"
+  },
+  "homepage": "https://github.com/hcavalieri/metalsmith-sanity#readme",
+  "main": "./index.js",
+  "typings": "./index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@sanity/client": "^0.141.5",
+    "axios": "^0.19.0",
+    "debug": "^4.1.1",
+    "groq-js": "git+https://git@github.com/sanity-io/groq-js.git",
+    "split2": "^3.1.1",
+    "jsonfile": "^5.0.0",
+    "pump": "^3.0.0",
+    "through2": "^3.0.1"
+  },
+  "peerDependencies": {
+    "metalsmith": "^2.3.0"
+  }
+}
