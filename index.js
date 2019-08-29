@@ -1,6 +1,6 @@
 const importFromSanity = require('./importFromSanity')
 
-const debug = require('debug')('metalsmith-sanity')
+const debug = require('debug')('metalsmith:sanity')
 
 /*
   Options:
@@ -33,13 +33,17 @@ module.exports = options => {
   } = options
 
   return function(files, _metalsmith, done) {
+    debug('Fetching data from Sanity')
+
     importFromSanity({
       useCache,
       cacheFilePath,
       clientConfig,
       debug
-    }).then(sanityData => (files[filesKey] = sanityData))
-
-    setImmediate(done)
+    }).then(sanityData => {
+      files[filesKey] = sanityData
+      debug(`Sanity data injeted into files[${filesKey}]`)
+      setImmediate(done)
+    })
   }
 }
