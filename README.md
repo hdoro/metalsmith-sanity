@@ -111,4 +111,4 @@ const allPosts = sanityData.map(doc => {
 })
 ```
 
-Not too hard, right? Now imagine doing this sort of manual operations to data with 10+ types of documents and thousands of entries? Believe me, it's _not_ fun! **GROQ solves all this and more**, and it's easier to learn and even more powerful than GraphQL for this sorts of operations! If in doubt, feel free to [reach me on Twitter](https://twitter.com/hcavaliericodes).
+Not too hard, right? Now imagine doing this sort of manual operations to data with 10+ types of documents and thousands of entries? Believe me, it's _not_ fun! **GROQ solves all this and more**, and it's easier to learn and even more powerful than GraphQL for this sorts of operations! If in doubt, feel free to [reach me on Twitter](https://twitter.com/hdorodev).

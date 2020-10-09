@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-sanity",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Metalsmith plugin for pulling and working with data from sanity.io",
   "repository": {
     "type": "git",
@@ -25,15 +25,14 @@
   "main": "./index.js",
   "typings": "./index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish-to-npm": "npm publish"
   },
   "dependencies": {
-    "@sanity/client": "^0.141.5",
-    "axios": "^0.19.0",
-    "debug": "^4.1.1",
-    "groq-js": "git+https://git@github.com/sanity-io/groq-js.git",
-    "split2": "^3.1.1",
-    "jsonfile": "^5.0.0",
+    "@sanity/client": "^1.150.7",
+    "axios": "^0.20.0",
+    "debug": "^4.2.0",
+    "split2": "^3.2.2",
+    "jsonfile": "^6.0.1",
     "pump": "^3.0.0",
     "through2": "^3.0.1"
   },
