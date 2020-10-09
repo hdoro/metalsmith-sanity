@@ -34,13 +34,13 @@ module.exports = async ({
 
   // Setting up our client with defaults for the dataset and useCdn
   const client = sanityClient({ ...config, dataset, useCdn })
-  const exportUrl = client.getUrl(`/data/export/production`)
+  const exportUrl = client.getUrl(`/data/export/${dataset}`)
 
   // And finally starting to populate the allDocs array with the pumped data
   let allDocs = []
   // console.time('[metalsmith-sanity] exporting data: ')
   try {
-    const inputStream = await getDocumentStream(exportUrl)
+    const inputStream = await getDocumentStream(exportUrl, config.token)
     await pump([
       inputStream,
       split(JSON.parse),
