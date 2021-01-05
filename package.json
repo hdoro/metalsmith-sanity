@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@sanity/client": "^1.150.7",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "debug": "^4.2.0",
     "split2": "^3.2.2",
     "jsonfile": "^6.0.1",
